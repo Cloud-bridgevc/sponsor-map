@@ -10,14 +10,29 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             <BrandMark /> SponsorMap
           </Link>
           <nav>
+            <Link href="/#problem">Problem</Link>
             <Link href="/#product">Product</Link>
             <Link href="/use-cases">Use cases</Link>
             <Link href="/demo">Live demo</Link>
             <Link href="/platform">Platform</Link>
             <Link href="/pricing">Pricing</Link>
+            <Link href="/#team">Team</Link>
           </nav>
           <div className="row" style={{ marginLeft: "auto" }}>
-            <Link href="/app" className="btn btn-ghost-dark btn-sm">Open workspace</Link>
+            <details className="mobile-only site-menu">
+              <summary aria-label="Open menu">Menu</summary>
+              <div className="site-menu-panel">
+                <Link href="/#problem">Problem</Link>
+                <Link href="/#product">Product</Link>
+                <Link href="/use-cases">Use cases</Link>
+                <Link href="/demo">Live demo</Link>
+                <Link href="/platform">Platform</Link>
+                <Link href="/pricing">Pricing</Link>
+                <Link href="/#team">Team</Link>
+                <Link href="/app">Open workspace</Link>
+              </div>
+            </details>
+            <Link href="/app" className="btn btn-ghost-dark btn-sm hide-phone">Open workspace</Link>
             <Link href="/request-demo" className="btn btn-gold btn-sm">Request a demo</Link>
           </div>
         </div>
@@ -52,7 +67,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="divider" style={{ background: "rgba(255,255,255,0.08)", margin: "36px 0 18px" }} />
-          <p className="tiny">© {new Date().getFullYear()} SponsorMap. Organizations and figures shown in demos are fictional.</p>
+          <p className="tiny">© {new Date().getFullYear()} SponsorMap · sponsormap.site · Founded by Temitope Afolabi (Founder/CEO) &amp; Obinna Eze (Co-founder/CTO) · <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>. Organizations and figures shown in demos are fictional.</p>
         </div>
       </footer>
     </>

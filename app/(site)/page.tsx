@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FulfilmentDemo from "@/components/FulfilmentDemo";
 import { Icon } from "@/components/ui";
+import { GlowPill, GlowTop, GlowMid, GlowEnd } from "@/components/Glow";
 
 const FEATURES = [
   { icon: "sparkle", title: "Commitment extraction", body: "Upload a signed agreement. SponsorMap pulls every promised benefit — quantity, placement, deadline and reporting duty — and keeps the source clause beside it." },
@@ -24,6 +25,7 @@ export default function Home() {
         <div className="container" style={{ padding: "96px 24px 110px" }}>
           <div className="grid-2" style={{ alignItems: "center", gap: 56 }}>
             <div className="stack-lg">
+              <GlowPill />
               <span className="eyebrow">Sponsorship operations platform</span>
               <h1 className="display">Every promise to a sponsor, <em>delivered and proven.</em></h1>
               <p className="lead">
@@ -44,6 +46,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <GlowTop />
 
       <section className="section" id="product">
         <div className="container stack-lg">
@@ -77,6 +81,8 @@ export default function Home() {
           <FulfilmentDemo compact />
         </div>
       </section>
+
+      <GlowMid />
 
       <section className="section section-dark">
         <div className="container stack-lg">
@@ -128,6 +134,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <GlowEnd />
 
       <section className="section hero" style={{ padding: "84px 0" }}>
         <div className="container stack-lg" style={{ alignItems: "center", textAlign: "center" }}>

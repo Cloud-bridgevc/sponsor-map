@@ -293,3 +293,16 @@ table.t { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   .content { padding: 0; }
   .report-doc { border: 0; }
 }
+
+/* Phone navigation (the main nav is hidden below 900px). */
+.site-menu { position: relative; }
+.site-menu summary { list-style: none; cursor: pointer; color: white; font-size: 14px; font-weight: 600; padding: 6px 10px; border: 1px solid rgba(255,255,255,.25); border-radius: 8px; }
+.site-menu summary::-webkit-details-marker { display: none; }
+.site-menu-panel { position: absolute; right: 0; top: calc(100% + 8px); z-index: 50; display: grid; gap: 4px; min-width: 200px; padding: 10px; border-radius: 12px; background: var(--navy-900); border: 1px solid rgba(255,255,255,.12); box-shadow: 0 18px 40px -18px rgba(0,0,0,.6); }
+.site-menu-panel a { color: rgba(255,255,255,.85); padding: 8px 10px; border-radius: 8px; font-size: 14px; }
+.site-menu-panel a:hover { background: rgba(255,255,255,.08); color: white; }
+@media (max-width: 640px) {
+  .hide-phone { display: none !important; }
+  .site-nav .inner { padding-left: 16px; padding-right: 16px; gap: 12px; }
+  .topbar { flex-wrap: wrap; }
+}
