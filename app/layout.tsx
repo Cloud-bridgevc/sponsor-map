@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <body>
         <Script src="/glow.js" strategy="afterInteractive" />
-        <script type="application/ld+json" id="founders-ld" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"SponsorMap\", \"url\": \"https://sponsormap.site\", \"email\": \"hello@sponsormap.site\", \"logo\": \"https://sponsormap.site/icon-512.png\", \"founder\": [{\"@type\": \"Person\", \"name\": \"Temitope Afolabi\", \"jobTitle\": \"Founder/CEO\"}, {\"@type\": \"Person\", \"name\": \"Obinna Eze\", \"jobTitle\": \"Co-founder/CTO\"}]}" }} />
+        <script type="application/ld+json" id="founders-ld" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"SponsorMap\", \"url\": \"https://sponsormap.site\", \"email\": \"hello@sponsormap.site\", \"logo\": \"https://sponsormap.site/icon-512.png\", \"founder\": [{\"@type\": \"Person\", \"name\": \"Justice Obi\", \"jobTitle\": \"Founder/CEO\"}, {\"@type\": \"Person\", \"name\": \"Obinna Eze\", \"jobTitle\": \"Co-founder/CTO\"}]}" }} />
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>

@@ -31,7 +31,7 @@ All organizations, people and figures in the demo data are fictional.
 - Phones: added a menu (the main nav was hidden below 900px with no way to open it) and fixed header/top-bar overflow.
 
 ### Content to confirm before launch
-- **Founders are placeholders:** Temitope Afolabi (Founder/CEO) and Obinna Eze (Co-founder/CTO) — replace in `components/Glow.tsx` (team section), the footer in `app/(site)/layout.tsx` and the JSON-LD in `app/layout.tsx`.
+- **Founders:** Justice Obi (Founder/CEO, confirmed) and Obinna Eze (Co-founder/CTO, still a placeholder) — edit in `components/Glow.tsx` (team section), the footer in `app/(site)/layout.tsx` and the JSON-LD in `app/layout.tsx`.
 - Contact email `hello@sponsormap.site` is a placeholder — create the forward or replace it.
 - Statistics (Forrester 2024; European Sponsorship Association; WFA & Lumency) — re-check figures and links.
 - Privacy notice and terms need operator details and governing law.

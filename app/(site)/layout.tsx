@@ -67,7 +67,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="divider" style={{ background: "rgba(255,255,255,0.08)", margin: "36px 0 18px" }} />
-          <p className="tiny">© {new Date().getFullYear()} SponsorMap · sponsormap.site · Founded by Temitope Afolabi (Founder/CEO) &amp; Obinna Eze (Co-founder/CTO) · <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>. Organizations and figures shown in demos are fictional.</p>
+          <p className="tiny">© {new Date().getFullYear()} SponsorMap · sponsormap.site · Founded by Justice Obi (Founder/CEO) &amp; Obinna Eze (Co-founder/CTO) · <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>. Organizations and figures shown in demos are fictional.</p>
         </div>
       </footer>
     </>
